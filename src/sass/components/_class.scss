@@ -1,0 +1,15 @@
+.call-to-action{
+    background : linear-gradient(to right, $lime-green, $bright-cyan);
+    text-align: center;
+    padding: .5rem 1rem;
+    border-radius: 99999px;
+    color: $white;
+    display: block;
+    
+}
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding : 0 1rem;
+}
