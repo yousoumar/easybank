@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
+@import './reset';
+@import './colors';
+
+
+body{
+    color: $white;
+    background-color: $very-light-gray;
+    min-height: 100vh;
+    font-family: 'Public Sans', sans-serif;
+  
+}
+
+header{
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid red;
+    padding: 0 1rem;
+}
+
+.hamburger{
+    
+    height: 1.5rem;
+    width: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    .bar{
+        height: 3px;
+        width: 100%;
+        background-color: $dark-blue;
+        position: absolute;
+    }
+    .bar1{
+        top: 0;
+    }
+    .bar2{
+        top: 50%;
+        width: 50%;
+    }
+    .bar3{
+        top: 100%;
+        width: 80%;
+    }
+    &.cliked{
+        .bar{
+            width: 100%;
+        }
+        .bar1{
+            top: 50%;
+            transform: rotate(45deg);
+        }
+        .bar2{
+            background-color: transparent;
+        }
+        
+        .bar3{
+            top: 50%;
+            transform: rotate(-45deg);
+        }
+        
+    }
+}
+
