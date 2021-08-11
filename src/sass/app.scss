@@ -38,6 +38,7 @@ header{
 
     .brand{
         z-index: 99;
+        margin-top: .7rem;
     }
 
     .buttons{
@@ -137,7 +138,7 @@ header{
     
 }
 
-@media screen and (min-width : 430px){
+@media screen and (min-width : 370px){
     header{
     
         .call-to-action{
@@ -151,7 +152,7 @@ header{
         
         .container{
             display: grid;
-            grid-template-columns: auto 1fr auto;
+            grid-template-columns: auto auto auto;
             gap: 2rem;
         }
         .buttons{
@@ -172,7 +173,6 @@ header{
         nav{
             position: static;
             z-index: unset;
-            margin-left: auto;
             width: auto;
             height: auto;
             padding: 0;
@@ -183,7 +183,7 @@ header{
         
             a{
                 
-                margin: 0 2rem ;
+                margin: 0 1rem ;
             }
             a:first-child{
                 padding-top: 0;
@@ -200,7 +200,7 @@ header{
 
 
 /* ---------------- hero ----------------- */
-.hero{
+#hero{
     .container{
         display: flex;
         flex-direction: column-reverse;
@@ -215,43 +215,42 @@ header{
         text-align: center;
     }
     h2{
-        color: $dark-blue;
-        font-size: 2rem;
-        
+        font-size: 2rem; 
         margin: 2rem 0;
     }
 
     .call-to-action{
-        max-width: 10rem;
+       
         margin: 2rem auto 0 auto;
     }
     
 }
-@media screen and (min-width : 700px){
-    .hero{
+@media screen and (min-width : 800px){
+    #hero{
         margin-top: 5rem;
-        height: 100vh;  
-        position: relative;
+        height: 45rem;
+     
         .container{
          
             display: flex;
-            flex-direction: column;
-            justify-content: center;           
+            flex-direction: row;
+            justify-content: space-between;           
+           
         }
         
 
         .img{
             background-image:url('../images/bg-intro-desktop.svg');
             margin: 0;
-            position: absolute;
-            right: 0;
-            width: 65%;
+            transform: translateY(-20%);
             overflow: hidden;
+            width: 68%;
+           
              
         }
         img{
-            margin-top: 6rem;
-            transform: translateX(20%) ;
+            
+            transform: translateX(15%) ;
 
         }
         .text{
@@ -261,14 +260,62 @@ header{
 
         }
         h2{
-        
             margin: 2rem 0;
         }
        
         .call-to-action{
-            max-width: 9rem;
             margin: 2rem 0;
         }
         
+    }
+}
+
+
+/* ---------------- about ----------------- */
+
+#about{
+    background-color: $light-grayish-blue;
+    padding: 3rem 0;
+    margin: 4rem 0;
+    text-align: center;
+    position: relative;
+    z-index: -1;
+    h2{
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+    p{
+        margin-bottom: 2rem;
+    }
+
+    .icon{
+        width: 4rem;
+        margin: 1.5rem auto;
+    }
+    .cards{
+        .title{
+            font-size: 1.2rem;
+            margin: 1.5rem 0;
+        }
+    }
+}
+
+@media screen and (min-width : 800px){
+    #about{
+        margin:  0;
+        transform: translateY(-5%);
+        padding: 5% 0;
+        text-align:left;
+       
+    
+        .icon{
+            
+            margin: 1.5rem 0;
+        }
+        .cards{
+            display: grid;
+            grid-template-columns: repeat(4, auto);
+            gap: 2rem;
+        }
     }
 }

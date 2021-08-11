@@ -2,6 +2,7 @@
     background : linear-gradient(to right, $lime-green, $bright-cyan);
     text-align: center;
     padding: .5rem 1rem;
+    width: 7rem;
     border-radius: 99999px;
     color: $white;
     display: block;
@@ -9,7 +10,11 @@
 }
 
 .container{
-    max-width: 1440px;
+    max-width: 1300px;
     margin: 0 auto;
     padding : 0 1rem;
+}
+
+.title{
+    color: $dark-blue;
 }
