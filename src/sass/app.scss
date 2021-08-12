@@ -22,7 +22,7 @@ body{
   
 }
 
-@media screen and (min-width : 800px){
+@media screen and (min-width : 900px){
     body{
         font-size: 1.125rem;
     }
@@ -59,7 +59,7 @@ body{
     }
     
 }
-@media screen and (min-width : 800px){
+@media screen and (min-width : 900px){
     #hero{
         margin-top: 5rem;
         height: 40rem;
@@ -68,7 +68,7 @@ body{
          
             display: flex;
             flex-direction: row;
-            justify-content: space-between;           
+            justify-content: space-between;         
            
         }
         
@@ -88,8 +88,8 @@ body{
         }
         .text{
             width: 30%;
-            margin-top: 8rem;
             text-align: left;
+            margin: 6rem 0;
 
         }
         .call-to-action{
@@ -129,7 +129,7 @@ body{
    
 }
 
-@media screen and (min-width : 800px){
+@media screen and (min-width : 900px){
     #about{
         margin:  0;
         transform: translateY(-5%);
@@ -188,7 +188,7 @@ body{
     }
 }
 
-@media screen and (min-width : 800px){
+@media screen and (min-width : 900px){
     #blog{
         .cards{
             display: grid;
