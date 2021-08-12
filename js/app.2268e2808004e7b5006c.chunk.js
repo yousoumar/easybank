@@ -1,1 +1,0 @@
-!function(){"use strict";var e=document.querySelector("header");document.querySelector(".hamburger").addEventListener("click",(function(c){e.classList.toggle("clicked")}))}();
