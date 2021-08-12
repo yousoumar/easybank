@@ -77,6 +77,7 @@ body{
             background-image:url('../images/bg-intro-desktop.svg');
             transform: translateY(-20%);
             overflow: hidden;
+            margin: 0;
             width: 70%;
            
              
@@ -134,8 +135,7 @@ body{
 @media screen and (min-width : 900px){
     #about{
         margin:  0;
-        transform: translateY(-5%);
-        padding-top: 12%;
+        padding-top: 5%;
         text-align:left;
        
     
