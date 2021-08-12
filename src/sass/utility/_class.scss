@@ -6,7 +6,9 @@
     border-radius: 99999px;
     color: $white;
     display: block;
-    
+    &:hover{
+        background : linear-gradient(to right, $lime-green, $lime-green);
+    }
 }
 
 .container{
@@ -17,4 +19,15 @@
 
 .title{
     color: $dark-blue;
+}
+
+.title-one{
+    font-size: 2rem;
+}
+.title-two{
+    font-size: 1.8rem;
+}
+
+.title-three{
+    font-size: 1.2rem;
 }
