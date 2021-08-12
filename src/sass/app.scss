@@ -2,8 +2,6 @@
 @import './utility/reset';
 @import './utility/colors';
 @import './utility/class';
-@import './components/header';
-@import './components/footer';
 
 /* -------------------- body ----------------------------- */
 body{
@@ -19,8 +17,11 @@ body{
   
 }
 
-/* -------------------- main ----------------------------- */
+/* -------------------- header ----------------------------- */
 
+@import './components/header';
+
+/* -------------------- main ----------------------------- */
 
 /* ---------------- hero ----------------- */
 #hero{
@@ -178,3 +179,7 @@ body{
     }
 
 }
+
+/* -------------------- footer ----------------------------- */
+
+@import './components/footer';
