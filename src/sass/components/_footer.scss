@@ -1,4 +1,5 @@
 footer{
+    
     background-color: $dark-blue;
     padding: 3rem 0;
 
@@ -52,11 +53,12 @@ footer{
 
 @media screen and (min-width : 800px){
     footer{
-     
+        
         .container{
             display: grid;
-            grid-template-columns: repeat(4, auto);
+            grid-template-columns: repeat(3, 1fr);
             align-items: flex-start;
+            
         }
 
         .brand{
