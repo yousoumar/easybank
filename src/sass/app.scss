@@ -16,7 +16,10 @@ body{
     line-height: 1.5;
   
 }
-
+a:hover{
+    transition: color .3s ease;
+    color: $lime-green;
+}
 /* -------------------- header ----------------------------- */
 
 @import './components/header';
@@ -150,6 +153,7 @@ body{
         border-radius: 10px;
     }
     .img, img{
+        height: 15rem;
         border-radius: 10px 10px 0 0;
     }
 
@@ -159,6 +163,9 @@ body{
     h2{
         text-align: center;
         margin: 1rem 0;
+    }
+    h3{
+        margin: .6rem 0;
     }
     .author{
         font-size: .9rem;
@@ -176,6 +183,7 @@ body{
         h2{
             text-align: left;
         }
+        
     }
 
 }

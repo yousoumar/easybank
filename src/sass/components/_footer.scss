@@ -25,10 +25,14 @@ footer{
         margin: 1rem 0;
         padding: 1rem 0;
 
-        img{
+        i{
             margin: 0 1rem;
-            width: 2rem;
-            
+            display: block;
+            color: $white;
+            &:hover{
+                transition: .3s ease;
+                color: $lime-green;
+            }
            
         }
 
@@ -78,8 +82,10 @@ footer{
            
             justify-content: flex-start;
             align-items: center;
-            img{
+            i{
+                
                 margin: 0 1rem 0 0;
+                
          
                
             }

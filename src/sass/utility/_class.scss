@@ -8,6 +8,7 @@
     display: block;
     &:hover{
         background : linear-gradient(to right, $lime-green, $lime-green);
+        color: $white;
     }
 }
 
