@@ -62,7 +62,7 @@ body{
 @media screen and (min-width : 800px){
     #hero{
         margin-top: 5rem;
-        height: 45rem;
+        height: 40rem;
      
         .container{
          
@@ -75,10 +75,9 @@ body{
 
         .img{
             background-image:url('../images/bg-intro-desktop.svg');
-            margin: 0;
             transform: translateY(-20%);
             overflow: hidden;
-            width: 68%;
+            width: 70%;
            
              
         }
@@ -88,8 +87,8 @@ body{
 
         }
         .text{
-            width: 35%;
-            margin-top: 5rem;
+            width: 30%;
+            margin-top: 8rem;
             text-align: left;
 
         }
@@ -125,7 +124,7 @@ body{
     
     .title{
         
-        margin: 1.5rem 0;
+        margin-bottom: 1.5rem 0;
     }
    
 }
@@ -134,7 +133,7 @@ body{
     #about{
         margin:  0;
         transform: translateY(-5%);
-        padding: 5% 0;
+        padding: 12% 0;
         text-align:left;
        
     
