@@ -46,7 +46,7 @@ module.exports = {
                     {
                         loader: "sass-loader",
                         options: {
-                          // Prefer `dart-sass`
+                          
                           implementation: require("sass"),
                         },
                     },
@@ -125,12 +125,12 @@ module.exports = {
             '...',
             new CssMinimizerPlugin(),
         ],
-        // module identifiers
+      
         moduleIds: 'deterministic',
         splitChunks: {
-            // allows to extract common dependencies into an existing or a new entry chunk
+            
             chunks: 'all',
-            // allows to extract specific extern dependencies in a file
+            
             cacheGroups: {
                 
                 vendor: {
