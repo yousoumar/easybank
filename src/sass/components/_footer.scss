@@ -5,36 +5,19 @@ footer{
     font-size: .95rem;
 
     .brand{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        img{
-            width: 15rem;
-            transform: translateX(5rem);
-        }
-        span{
-            transform: translateX(-7rem);
-            font-weight: 700;
-            font-size: 1.5rem;
-            color: $white;
-        }
+        display: block;
+        width: 12rem;
+        margin: 0 auto;
     }
 
     .social-links{
         display: flex;
         justify-content: center;
-        align-items: center;
         margin: 1rem 0;
 
         i{
-            margin: 0 .5rem;
             display: block;
-            color: $white;
-            &:hover{
-                transition: .3s ease;
-                color: $lime-green;
-            }
+            margin: 0 .5rem;
            
         }
 
@@ -44,7 +27,6 @@ footer{
         display: flex;
         flex-direction: column;
         align-items: center;
-   
         a{
             display: block;
             text-align: center;
@@ -65,44 +47,20 @@ footer{
         .container{
             display: grid;
             grid-template-columns: 12rem auto auto auto;
-            align-items: flex-start;
+            align-items: center;
             justify-content: space-between;
-           
         }
 
         .brand{
-            justify-content: flex-start;
-            img{
-           
-                transform: translateX(0);
-               
-            }
-            span{
-                transform: translateX(-6.5rem);
-                padding-bottom: .3rem;
-               
-            }
+            margin-top: .3rem;
         }
-    
         .social-links{
             margin: 0;
-            justify-content: center;
-            align-items: center;
-            i{
-                
-                margin: .3rem .5rem;
-                
-         
-               
-            }
-            
     
         }
         nav{
-            padding-top: .5rem;
-            display: flex;
+
             flex-direction: row;
-            justify-content: center;
             a{
                 padding: 0 1rem;                
             }
@@ -111,9 +69,7 @@ footer{
             
             margin: 0;
             
-        }
-    
-        
+        }     
 
     }
    
