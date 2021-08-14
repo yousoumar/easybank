@@ -32,3 +32,15 @@
 .title-three{
     font-size: 1.2rem;
 }
+
+/* ---------------- animation ----------------- */
+.will-be-revealed{
+    opacity: 0;
+    transform: translateY(3rem);
+    transition: .6s ease;
+}
+
+.will-be-revealed-revealed{
+    opacity: 1!important;
+    transform: translate(0, 0)!important;
+}

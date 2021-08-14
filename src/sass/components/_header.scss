@@ -4,11 +4,14 @@ header{
     background-color: $white;
     position: fixed;
     width: 100%;
-    top: 0;
+    top: -5rem;
+    transition: top 1s ease;
     left: 0;
     z-index: 99;
     height: 5rem;
-
+    .loaded &{
+        top: 0;
+    }
     .container{
         display: flex;
         justify-content: space-between;

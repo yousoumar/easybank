@@ -12,6 +12,7 @@ body{
     grid-template-rows: auto 1fr auto;
     font-family: 'Quicksand', sans-serif;
     overflow-x: hidden;
+    position: relative;
     color: $dark;
     line-height: 1.5;
     font-weight: 400;
@@ -28,6 +29,9 @@ body{
         font-size: 1.2rem;
     }
 }
+/* -------------------- loader ----------------------------- */
+@import './components/loader';
+
 /* -------------------- header ----------------------------- */
 
 @import './components/header';
@@ -48,7 +52,15 @@ body{
     }
     .text{
         text-align: center;
+        transform: translateY(3rem);
+        opacity: 0;
+        transition: .6s ease ;
+        .loaded &{
+            transform: translateY(0);
+            opacity: 1;
+        }
     }
+
     h2{
         
         margin: 2rem 0;
@@ -139,6 +151,12 @@ body{
             grid-template-columns: repeat(2, 1fr);
             gap: 2rem;
         }
+
+        @for $i from 1 through 4{
+            .card:nth-child(#{$i}){
+                transition-delay: #{$i*0.1}s;
+            }
+        }
     }
 }
 
@@ -206,6 +224,11 @@ body{
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 2rem;
+        }
+        @for $i from 1 through 4{
+            .card:nth-child(#{$i}){
+                transition-delay: #{$i*0.1}s;
+            }
         }
 
         h2{
