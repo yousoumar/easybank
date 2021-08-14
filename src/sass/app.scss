@@ -231,9 +231,7 @@ body{
             }
         }
 
-        h2{
-            text-align: left;
-        }
+       
         
     }
 
@@ -246,6 +244,9 @@ body{
             
             grid-template-columns: repeat(4, 1fr);
           
+        }
+        h2{
+            text-align: left;
         }
     }
 
