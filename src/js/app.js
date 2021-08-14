@@ -6,14 +6,14 @@ import '../sass/app.scss';
 const header = document.querySelector('header');
 const hamburger = document.querySelector('.hamburger');
 hamburger.addEventListener('click', (e)=>{
-    header.classList.toggle('clicked')
+    header.classList.toggle('clicked');
 });
 
 /* -------------------- IntersectionObserver && loader ----------------------------- */
 const options = {
     root: null,
     rootMargin: '0px',
-    threshold: .3
+    threshold: .2
   }
   
   window.addEventListener('load', ()=>{
