@@ -1,5 +1,4 @@
 footer{
-    
     background-color: $dark-blue;
     color: $white;
     padding: 3rem 0;
@@ -17,7 +16,7 @@ footer{
         span{
             transform: translateX(-7rem);
             font-weight: 700;
-            font-size: 2rem;
+            font-size: 1.5rem;
             color: $white;
         }
     }
@@ -49,50 +48,49 @@ footer{
         a{
             display: block;
             text-align: center;
-            padding: 1rem 1rem;
+            padding: .5rem 1rem;
             
         }
     }
     .call-to-action{
-        margin: 1rem auto 1.5rem auto;
+        margin: 1rem auto 0 auto;
     }
 
-    .copyright{
-        text-align: center;
-        
-    }
+  
 }
 
-@media screen and (min-width : 900px){
+@media screen and (min-width : 1024px){
     footer{
         
         .container{
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: 12rem auto auto auto;
             align-items: flex-start;
+            justify-content: space-between;
+           
         }
 
         .brand{
             justify-content: flex-start;
-          
             img{
            
                 transform: translateX(0);
                
             }
             span{
-                transform: translateX(-12rem);
+                transform: translateX(-6.5rem);
+                padding-bottom: .3rem;
                
             }
         }
     
         .social-links{
-           
-            justify-content: flex-start;
+            margin: 0;
+            justify-content: center;
             align-items: center;
             i{
                 
-                margin: 0 1rem 0 0;
+                margin: .3rem .5rem;
                 
          
                
@@ -104,23 +102,18 @@ footer{
             padding-top: .5rem;
             display: flex;
             flex-direction: row;
-      
+            justify-content: center;
             a{
-                
-                text-align: left;
-                padding: 0  1rem .5rem 1rem;
-                
+                padding: 0 1rem;                
             }
         }
         .call-to-action{
             
-            margin: .5rem 0 2rem auto;
+            margin: 0;
             
         }
     
-        .copyright{
-            text-align: right;
-        }
+        
 
     }
    

@@ -13,7 +13,7 @@ hamburger.addEventListener('click', (e)=>{
 const options = {
     root: null,
     rootMargin: '0px',
-    threshold: .2
+    threshold: .3
   }
   
   window.addEventListener('load', ()=>{
