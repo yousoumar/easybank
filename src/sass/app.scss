@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap');
 @import './utility/reset';
 @import './utility/colors';
 @import './utility/class';
@@ -10,11 +10,12 @@ body{
     min-height: 100vh;
     display: grid;
     grid-template-rows: auto 1fr auto;
-    font-family: 'Public Sans', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     overflow-x: hidden;
-    color: $grayish-blue;
+    color: $dark;
     line-height: 1.5;
-    font-weight: 300;
+    font-weight: 400;
+    font-size: 1.125rem;
     a:hover{
         transition: color .3s ease;
         color: $lime-green;
@@ -24,7 +25,7 @@ body{
 
 @media screen and (min-width : 900px){
     body{
-        font-size: 1.125rem;
+        font-size: 1.2rem;
     }
 }
 /* -------------------- header ----------------------------- */
@@ -77,8 +78,7 @@ body{
             background-image:url('../images/bg-intro-desktop.svg');
             transform: translateY(-20%);
             overflow: hidden;
-            margin: 0;
-            width: 70%;
+            width: 65%;
            
              
         }
@@ -88,7 +88,7 @@ body{
 
         }
         .text{
-            width: 30%;
+            width: 34%;
             text-align: left;
             margin: 6rem 0;
 
@@ -128,13 +128,24 @@ body{
         margin-bottom: 1.5rem 0;
     }
     .content{
-        font-size: .9rem;
+        font-size: .95rem;
     }
 }
 
-@media screen and (min-width : 900px){
+@media screen and (min-width : 600px){
+    #about{
+        .cards{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+    }
+}
+
+@media screen and (min-width : 1024px){
     #about{
         margin:  0;
+        padding-top: 10%;
         text-align:left;
        
     
@@ -155,7 +166,7 @@ body{
 #blog{
     margin: 3rem 0;
     .card{
-        background-color: $white;
+        background-color: $light-grayish-blue;
         margin-bottom: 2rem;
         border-radius: 10px;
         -webkit-mask-image: -webkit-radial-gradient(white, black);
@@ -182,18 +193,18 @@ body{
         margin: .6rem 0;
     }
     .author{
-        font-size: .9rem;
+        font-size: .95rem;
     }
     p{
-        font-size: .9rem;
+        font-size: .95rem;
     }
 }
 
-@media screen and (min-width : 900px){
+@media screen and (min-width : 600px){
     #blog{
         .cards{
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(2, 1fr);
             gap: 2rem;
         }
 
@@ -201,6 +212,18 @@ body{
             text-align: left;
         }
         
+    }
+
+}
+
+
+@media screen and (min-width : 1024px){
+    #blog{
+        .cards{
+            
+            grid-template-columns: repeat(4, 1fr);
+          
+        }
     }
 
 }
