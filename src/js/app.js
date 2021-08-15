@@ -29,6 +29,7 @@ const options = {
     entries.forEach(function(entry){
       if (entry.isIntersecting){
         entry.target.classList.add('will-be-revealed-revealed'); 
+        observer.unobserve(entry.target);
       }
       
     });
