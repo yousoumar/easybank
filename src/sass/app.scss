@@ -9,7 +9,7 @@ body{
     background-color: $very-light-gray;
     min-height: 100vh;
     display: grid;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: 1fr auto;
     font-family: 'Quicksand', sans-serif;
     overflow-x: hidden;
     position: relative;
@@ -199,7 +199,7 @@ body{
     }
     h2{
         text-align: center;
-        margin: 1rem 0;
+        margin-bottom: 1rem;
     }
     h3{
         margin: .6rem 0;
