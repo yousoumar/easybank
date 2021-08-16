@@ -115,19 +115,13 @@ header{
             top: 50%;
             transform: rotate(-45deg);
         }
+        .call-to-action{
+            display: block;
+        }
             
      
     }
     
-}
-
-@media screen and (min-width : 370px){
-    header{
-    
-        .call-to-action{
-            display: block;
-        }
-    }
 }
 
 @media screen and (min-width : 1024px){
@@ -154,6 +148,7 @@ header{
         }
         .call-to-action{
             margin:0;
+            display: block;
 
         }
     
