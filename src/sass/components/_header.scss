@@ -51,9 +51,11 @@ header{
         transition: clip-path .5s ease;
         color: $white;
         cursor: pointer;
-        div{
+        div:not(:last-child){
            
             margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid $white;
         }
         div:first-child{
             padding-top: 1.5rem;
@@ -65,7 +67,7 @@ header{
     
     .hamburger{
         z-index: 99;
-        height: 1.5rem;
+        height: 1.4rem;
         width: 2rem;
         display: flex;
         flex-direction: column;
@@ -78,6 +80,8 @@ header{
             width: 100%;
             background-color: $white;
             position: absolute;
+            border-radius: 5px;
+            pointer-events: none;
         }
     
         .bar1{
@@ -164,15 +168,14 @@ header{
             background-color: transparent;
             color: inherit;
             cursor:inherit;
-        
+    
             div{
-                
-                margin: 0 1rem ;
+           
+                margin: 0 1rem!important;
+                padding: 0!important;
+                border: none!important;
             }
-            div:first-child{
-                padding-top: 0;
-                border-top: none
-            }    
+             
         
         }
         

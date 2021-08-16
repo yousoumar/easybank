@@ -35,9 +35,8 @@
 }
 
 /* ---------------- animation ----------------- */
+
 .will-be-revealed{
-    opacity: 0;
-    transform: translateY(3rem);
     transition: 1s ease;
 }
 
@@ -45,3 +44,36 @@
     opacity: 1!important;
     transform: translate(0, 0)!important;
 }
+
+/* ---------------- cards container ----------------- */
+
+@media screen and (min-width : 600px){
+  
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+        
+  
+}
+
+@media screen and (min-width : 1024px){
+   
+    .cards{
+        grid-template-columns: repeat(4, 1fr);
+       
+    }
+    .will-be-revealed{
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+    @for $i from 2 through 4{
+        .card:nth-child(#{$i}){
+            transition-delay: #{$i*0.1}s;
+        }
+    }
+}    
+
+

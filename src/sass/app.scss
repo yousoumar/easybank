@@ -140,37 +140,26 @@ body{
     .content{
         font-size: .95rem;
     }
-}
-
-@media screen and (min-width : 600px){
-    #about{
-        .cards{
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 2rem;
-        }
-
-        
+    .will-be-revealed{
+        opacity: 0;
+        transform: translateY(3rem);
     }
 }
+
+
 
 @media screen and (min-width : 1024px){
     #about{
         margin:  0;
         padding-top: 10%;
         text-align: left;
-      
-        .cards{
-            grid-template-columns: repeat(4, 1fr);
+
+        .card{
             text-align: center;
         }
 
-        @for $i from 1 through 4{
-            .card:nth-child(#{$i}){
-                transition-delay: #{$i*0.1}s;
-            }
-        }
     }
+    
 }
 
 /* ---------------- blog ----------------- */
@@ -214,11 +203,7 @@ body{
 
 @media screen and (min-width : 600px){
     #blog{
-        .cards{
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 2rem;
-        }
+       
         .card{
             margin-bottom: 0;
         }
@@ -229,16 +214,7 @@ body{
 
 @media screen and (min-width : 1024px){
     #blog{
-        .cards{
-            
-            grid-template-columns: repeat(4, 1fr);
-          
-        }
-        @for $i from 1 through 4{
-            .card:nth-child(#{$i}){
-                transition-delay: #{$i*0.1}s;
-            }
-        }
+      
         h2{
             text-align: left;
         }
