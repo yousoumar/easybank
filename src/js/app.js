@@ -3,9 +3,13 @@ import '../sass/app.scss';
 /* -------------------- header ----------------------------- */
 
 const header = document.querySelector('header');
+const nav = document.querySelector('header nav');
 const hamburger = document.querySelector('.hamburger');
 hamburger.addEventListener('click', (e)=>{
     header.classList.toggle('clicked');
+});
+nav.addEventListener('click', (e)=>{
+  header.classList.add('clicked');
 });
 
 /* -------------------- IntersectionObserver && loader ----------------------------- */
