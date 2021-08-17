@@ -42,39 +42,38 @@ footer{
         margin: 1rem auto 0 auto;
     }
 
-  
-}
-
-@media screen and (min-width : 1024px){
-    footer{
+    @media screen and (min-width : 1024px){
+        &{
+            
+            .container{
+                display: grid;
+                grid-template-columns: 12rem auto auto auto;
+                align-items: center;
+                justify-content: space-between;
+            }
+    
+            .brand{
+                margin-top: .5rem;
+            }
+            .social-links{
+                margin: 0;
         
-        .container{
-            display: grid;
-            grid-template-columns: 12rem auto auto auto;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .brand{
-            margin-top: .5rem;
-        }
-        .social-links{
-            margin: 0;
+            }
+            nav{
+    
+                flex-direction: row;
+                a{
+                    padding: 0 1rem;                
+                }
+            }
+            .call-to-action{
+                
+                margin: 0;
+                
+            }     
     
         }
-        nav{
-
-            flex-direction: row;
-            a{
-                padding: 0 1rem;                
-            }
-        }
-        .call-to-action{
-            
-            margin: 0;
-            
-        }     
-
+       
     }
-   
 }
+

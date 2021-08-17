@@ -102,7 +102,7 @@ header{
     &.clicked{
         nav{
             clip-path: circle(150% at 100% 0%);
-            cursor:inherit;
+            cursor: default;
         }
         .bar{
             width: 100%;
@@ -125,60 +125,60 @@ header{
             
      
     }
-    
-}
 
-@media screen and (min-width : 1024px){
-    header{
-        top: -5rem;
-        .loaded &{
-            top: 0;
-        }
-        
-        .container{
-            display: grid;
-            grid-template-columns: auto auto auto;
-            gap: 2rem;
-        }
-        .buttons{
-            margin-left: auto;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .hamburger{
-            display: none;
-        }
-        .call-to-action{
-            margin:0;
-            display: block;
-
-        }
-    
-        nav{
-            position: static;
-            z-index: unset;
-            width: auto;
-            height: auto;
-            padding: 0;
-            clip-path: circle(100%);
-            flex-direction: row;
-            font-size: 1rem;
-            background-color: transparent;
-            color: inherit;
-            cursor:inherit;
-    
-            div{
-           
-                margin: 0 1rem!important;
-                padding: 0!important;
-                border: none!important;
+    @media screen and (min-width : 1024px){
+        &{
+            top: -5rem;
+            .loaded &{
+                top: 0;
             }
-             
+            
+            .container{
+                display: grid;
+                grid-template-columns: auto auto auto;
+                gap: 2rem;
+            }
+            .buttons{
+                margin-left: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .hamburger{
+                display: none;
+            }
+            .call-to-action{
+                margin:0;
+                display: block;
+
+            }
         
+            nav{
+                position: static;
+                z-index: unset;
+                width: auto;
+                height: auto;
+                padding: 0;
+                clip-path: circle(100%);
+                flex-direction: row;
+                font-size: 1rem;
+                background-color: transparent;
+                color: inherit;
+                cursor: default;
+        
+                div{
+            
+                    margin: 0 1rem!important;
+                    padding: 0!important;
+                    border: none!important;
+                }
+                
+            
+            }
+            
         }
-        
+    
     }
     
 }

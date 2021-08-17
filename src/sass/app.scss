@@ -70,47 +70,49 @@ body{
        
         margin: 2rem auto 0 auto;
     }
+
+    @media screen and (min-width : 900px){
+        &{
+            margin-top: 5rem;
+            height: 40rem;
+         
+            .container{
+             
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;         
+               
+            }
+            
+    
+            .img{
+                background-image:url('../images/bg-intro-desktop.svg');
+                transform: translateY(-20%);
+                overflow: hidden;
+                width: 65%;
+               
+                 
+            }
+            img{
+                
+                transform: translateX(20%) ;
+    
+            }
+            .text{
+                width: 34%;
+                text-align: left;
+                margin: 6rem 0;
+    
+            }
+            .call-to-action{
+                margin: 2rem 0;
+            }
+            
+        }
+    }
     
 }
-@media screen and (min-width : 900px){
-    #hero{
-        margin-top: 5rem;
-        height: 40rem;
-     
-        .container{
-         
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;         
-           
-        }
-        
 
-        .img{
-            background-image:url('../images/bg-intro-desktop.svg');
-            transform: translateY(-20%);
-            overflow: hidden;
-            width: 65%;
-           
-             
-        }
-        img{
-            
-            transform: translateX(20%) ;
-
-        }
-        .text{
-            width: 34%;
-            text-align: left;
-            margin: 6rem 0;
-
-        }
-        .call-to-action{
-            margin: 2rem 0;
-        }
-        
-    }
-}
 
 
 /* ---------------- about ----------------- */
@@ -122,11 +124,6 @@ body{
     text-align: center;
     position: relative;
     z-index: -1;
-   
-    p{
-        margin-bottom: 1rem;
-        
-    }
 
     .icon{
         width: 4rem;
@@ -144,23 +141,24 @@ body{
         opacity: 0;
         transform: translateY(3rem);
     }
-}
-
-
-
-@media screen and (min-width : 1024px){
-    #about{
-        margin:  0;
-        padding-top: 10%;
-        text-align: left;
-
-        .card{
-            text-align: center;
-        }
-
-    }
+    @media screen and (min-width : 1024px){
+        &{
+            margin:  0;
+            padding-top: 10%;
+            text-align: left;
     
+            .card{
+                text-align: center;
+            }
+    
+        }
+        
+    }
 }
+
+
+
+
 
 /* ---------------- blog ----------------- */
 
@@ -168,7 +166,6 @@ body{
     margin: 3rem 0;
     .card{
         background-color: $light-grayish-blue;
-        margin-bottom: 2rem;
         border-radius: 10px;
         -webkit-mask-image: -webkit-radial-gradient(white, black);
         cursor: pointer;
@@ -198,29 +195,20 @@ body{
     }
     p{
         font-size: .95rem;
-    }
-}
-
-@media screen and (min-width : 600px){
-    #blog{
-       
-        .card{
-            margin-bottom: 0;
+    }    
+    
+    @media screen and (min-width : 1024px){
+        &{
+          
+            h2{
+                text-align: left;
+            }
         }
+    
     }
-
 }
 
 
-@media screen and (min-width : 1024px){
-    #blog{
-      
-        h2{
-            text-align: left;
-        }
-    }
-
-}
 
 /* -------------------- footer ----------------------------- */
 
