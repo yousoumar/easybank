@@ -1,1 +1,1 @@
-<a href = "https://yousoumar.github.io/easybank/"><img src = "src/images/screenshot.jpg"></img></a>
+<img src = "src/images/screenshot.jpg"></img>
