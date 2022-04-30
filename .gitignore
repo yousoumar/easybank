@@ -1,6 +1,7 @@
 node_modules
 design
 package-lock.json
+yarn.lock
 build
 .DS_Store
 txt.html
